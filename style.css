@@ -1,29 +1,208 @@
-body{
-    background-color: #00000000 ;
+body {
+    background-color: #000;
 }
+
+.container-resumo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resumo {
+    margin-left: 55px;
+    margin-right: 55px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titulo-resumo {
+    margin-top: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    font-style: normal;
+    color: #E94141;
+    text-align: center;
+}
+
+.texto-resumo {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 30px;
+    width: 700px;
+}
+
+.foto {
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+
+
+.container {
+    height: 80px;
+    background-color: #F5D7D7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo-home {
+    margin-top: 15px;
+    margin-left: 25px;
+    height: 55px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.link {
+    display: flex;
+}
+
 .icones-cabeca {
+    margin: 0px 10px 0px 10px;
     height: 45px;
     width: 40px;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .inicio {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+   
 }
 
-.titulo-icon {
+.resenha {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.personagens {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.autor {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.autoral {
+    display: flex;
+    flex-direction: row;
+    margin-right: 55px;
+}
+
+.titulo-icon-inicio{
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
     margin-left: 10px;
+    font-size: 20px;
+    color: #E94141;
+    text-decoration: none;
+    /* text-shadow:3px 3px 5px #E94141; */
+}
+.titulo-icon {
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.rodape {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    flex-wrap: wrap;
 
 }
 
-.inicio {
+#acesso {
+    font-family: "Kadwa", serif;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    font-size: 25px;
+}
+
+.amazon {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px #000;
+}
+
+.kindle {
+    object-fit: cover;
+    margin-left: 60px;
+    margin-right: 50px;
+    width:400px;
+    height: 75px;
+}
+
+.icones-rodape {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px #000;
+}
+
+.icones-pe1 {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.icones-pe2 {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.icones-pe3 {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.assinado {
+    margin-right: 140px;
+    display: flex;
+    align-items: center;
+
+}
+.assinado img{
+    width: 260px;
+    height: 80px;
+}
+
+/* .inicio {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -38,4 +217,4 @@ body{
 text-decoration: none;
 color: inherit;
 
-}
+} */
