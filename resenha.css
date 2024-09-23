@@ -1,0 +1,242 @@
+body {
+  background-color: black;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin-left: 55px;
+  font-size: 30px;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  justify-content: center;
+}
+
+.link-conto {
+  color: rgb(216, 70, 70);
+  font-size: 35px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.titulo-resenha {
+  margin-top: 30px;
+ 
+  font-size: 55px;
+  text-align: center;
+  color: rgb(216, 70, 70);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.resumo-resenha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumo-resenha h2 {
+  color: rgb(236, 236, 236);
+  font-size: 30px;
+  padding: 50px;
+  border-radius: 50px;
+  width: 80%;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.resumo-resenha p{
+margin-top: 8px;
+}
+.avaliaçao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-avaliacao{
+  color: rgb(216, 70, 70);
+  font-size: 30px;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+/* estrela */
+
+
+.botoes {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating>input {
+  display: none;
+}
+
+.rating>label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating>input:checked~label,
+.rating>input:checked~label~label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.feedback {
+  max-width: 360px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+}
+
+/* rodapé */
+.rodapé {
+  background-color: white;
+}
+
+.container {
+  height: 80px;
+  background-color: #F5D7D7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo-home {
+  margin-top: 15px;
+  margin-left: 25px;
+  height: 55px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.link {
+  display: flex;
+}
+
+.icones-cabeca {
+  margin: 0px 10px 0px 10px;
+  height: 45px;
+  width: 40px;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.resenha {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.personagens {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.autor {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.curiosidades {
+  display: flex;
+  flex-direction: row;
+  margin-right: 55px;
+}
+
+.titulo-icon-resenha {
+  font-family: "Kadwa", serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #E94141;
+  text-decoration: none;
+ 
+}
+
+.titulo-icon {
+  font-family: "Kadwa", serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+@media screen and (max-width: 1050px) {
+
+  .titulo-icon,
+  .titulo-icon-resenha {
+      font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .titulo-icon img,
+  .titulo-icon-resenha img {
+      display: none;
+  }
+
+ 
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+  }
+  
+}

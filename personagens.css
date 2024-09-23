@@ -1,49 +1,60 @@
 body {
-    background-color: #000;
+    background-color: black;
 }
 
-.container-resumo {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.resumo {
-    margin-left: 55px;
-    margin-right: 55px;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.titulo-resumo {
-    margin-top: 40px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 65px;
-    font-weight: 400;
-    font-style: normal;
-    color: #E94141;
+.titulo-personagem {
     text-align: center;
+    color: rgb(216, 70, 70);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+
 }
 
-.texto-resumo {
+h2 {
+    color: white;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h3 {
     font-family: "Belanosima", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    color: #ffff;
-    font-size: 23px;
-    margin-top: 30px;
-    margin-right: 40px;
-    margin-left: 30px;
-    width: 700px;
+    color: white;
 }
 
-.foto {
+.nome-perso{
+    margin-bottom: 15px;
+}
+.personagens {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.personagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+
+}
+.personagem img{
+    width: 100%;
+    height: 420px;
     object-fit: cover;
 }
-
-
+.bio{
+   padding: 10px;
+    font-size: 25px;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 .container {
     height: 80px;
     background-color: #F5D7D7;
@@ -98,9 +109,10 @@ body {
 .curiosidades {
     display: flex;
     flex-direction: row;
+    margin-right: 55px;
 }
 
-.titulo-icon-inicio {
+.titulo-icon-personagens {
     font-family: "Kadwa", serif;
     font-weight: 700;
     font-style: normal;
@@ -110,7 +122,7 @@ body {
     font-size: 20px;
     color: #E94141;
     text-decoration: none;
-
+   
 }
 
 .titulo-icon {
@@ -125,50 +137,25 @@ body {
     text-decoration: none;
 }
 
-
-
-/* .inicio {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 50px;
-    border-radius: 99em;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transform-origin: center left;
-    transition: width 0.2s ease-in;
-text-decoration: none;
-color: inherit;
-
-} */
-
 @media screen and (max-width: 1050px) {
 
     .titulo-icon,
-    .titulo-icon-inicio {
+    .titulo-icon-personagens {
         font-size: 12px;
     }
-}
-
-@media screen and (max-width: 850px) {
-
+  }
+  
+  @media screen and (max-width: 850px) {
+  
     .titulo-icon img,
-    .titulo-icon-inicio img {
+    .titulo-icon-personagens img {
         display: none;
     }
-
-    .titulo-resumo {
-        font-size: 34px;
-    }
-    .texto-resumo{
-        font-size: 20px;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 550px) {
+  
+   
+  }
+  
+  @media screen and (max-width: 550px) {
     .container {
         height: auto;
         flex-direction: column;
@@ -176,8 +163,5 @@ color: inherit;
         justify-content: center;
         gap: 16px;
     }
-    .foto{
-        width: auto;
-        height: auto;
-    }
-}
+    
+  }

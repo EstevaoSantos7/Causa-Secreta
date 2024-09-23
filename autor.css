@@ -1,49 +1,85 @@
 body {
-    background-color: #000;
+    background-color: black;
 }
 
-.container-resumo {
+.autor {
     display: flex;
-    flex-wrap: wrap;
+    margin: 10px;
 }
 
-.resumo {
-    margin-left: 55px;
-    margin-right: 55px;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    flex-wrap: wrap;
+.biografias {
+    margin-left: 5px;
 }
 
-.titulo-resumo {
-    margin-top: 40px;
+.titulo-bio {
+    margin: 30px 0px 30px 6px;
+    color: rgb(216, 70, 70);
     font-family: "Bebas Neue", sans-serif;
-    font-size: 65px;
-    font-weight: 400;
-    font-style: normal;
-    color: #E94141;
-    text-align: center;
+    font-size: 45px;
 }
 
-.texto-resumo {
+.biografia {
+    color: rgb(218, 218, 218);
+    width: 600px;
+    margin: 10px;
+    font-size: 25px;
     font-family: "Belanosima", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    color: #ffff;
-    font-size: 23px;
-    margin-top: 30px;
-    margin-right: 40px;
-    margin-left: 30px;
-    width: 700px;
 }
 
-.foto {
+.titulo-obra {
+    color: rgb(216, 70, 70);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    display: flex;
+    justify-content: end;
+    /* margin-right: 85px; */
+    margin: 30px 95px 30px 0px;
+}
+
+.imgAutor {
+    padding-top: 100px;
+}
+
+.imgAutor img {
+    width: 400px;
+    border: 10px solid;
+    color: #F5D7D7;
+
+}
+
+.famosas {
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+
+
+.img1 img {
+    margin: 20px;
+}
+
+.obras img {
+    display: flex;
+    width: 850px;
+    height: 600px;
     object-fit: cover;
 }
 
+.autores {
+    display: flex;
+    flex-direction: row;
+}
 
+
+
+
+
+
+
+/* cabecalho */
 .container {
     height: 80px;
     background-color: #F5D7D7;
@@ -98,9 +134,10 @@ body {
 .curiosidades {
     display: flex;
     flex-direction: row;
+    margin-right: 55px;
 }
 
-.titulo-icon-inicio {
+.titulo-icon-autor {
     font-family: "Kadwa", serif;
     font-weight: 700;
     font-style: normal;
@@ -125,47 +162,50 @@ body {
     text-decoration: none;
 }
 
+/* cabecalho */
+@media screen and (max-width: 1500px) {
+    .autores {
+        display: flex;
+        flex-direction: column;
 
+    }
 
-/* .inicio {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 50px;
-    border-radius: 99em;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transform-origin: center left;
-    transition: width 0.2s ease-in;
-text-decoration: none;
-color: inherit;
-
-} */
+    .titulo-obra {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 1050px) {
 
     .titulo-icon,
-    .titulo-icon-inicio {
+    .titulo-icon-autor {
         font-size: 12px;
+    }
+
+    .titulo-obra {
+        display: flex;
+        justify-content: end;
+    }
+
+    .obras img {
+        width: auto;
     }
 }
 
 @media screen and (max-width: 850px) {
 
     .titulo-icon img,
-    .titulo-icon-inicio img {
+    .titulo-icon-autor img {
         display: none;
     }
 
-    .titulo-resumo {
-        font-size: 34px;
-    }
-    .texto-resumo{
-        font-size: 20px;
+    .obras img {
         width: auto;
+        height: auto;
     }
+
+
 }
 
 @media screen and (max-width: 550px) {
@@ -176,8 +216,5 @@ color: inherit;
         justify-content: center;
         gap: 16px;
     }
-    .foto{
-        width: auto;
-        height: auto;
-    }
+
 }

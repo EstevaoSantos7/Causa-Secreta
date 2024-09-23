@@ -1,0 +1,338 @@
+.container {
+    height: 80px;
+    background-color: #F5D7D7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo-home {
+    margin-top: 15px;
+    margin-left: 25px;
+    height: 55px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.link {
+    display: flex;
+}
+
+.icones-cabeca {
+    margin: 0px 10px 0px 10px;
+    height: 45px;
+    width: 40px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.resenha {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.personagens {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.autor {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.curiosidades {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.titulo-icon-curiosidades {
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #E94141;
+    text-decoration: none;
+
+}
+
+.titulo-icon {
+    font-family: "Kadwa", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* rodape */
+
+
+.rodape {
+    margin-top: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    flex-wrap: wrap;
+
+}
+
+#acesso {
+    font-family: "Kadwa", serif;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    font-size: 25px;
+}
+
+.amazon {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px #000;
+}
+
+.kindle {
+    object-fit: cover;
+    margin-left: 60px;
+    margin-right: 50px;
+    width: 400px;
+    height: 75px;
+}
+
+.icones-rodape {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px #000;
+}
+
+.icones-pe1 {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.icones-pe2 {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.icones-pe3 {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.assinado {
+    margin-right: 140px;
+    display: flex;
+    align-items: center;
+
+}
+
+.assinado img {
+    width: 260px;
+    height: 80px;
+}
+
+/* rodape */
+
+
+body {
+    background-color: #000;
+}
+
+.titulo-curiosidade {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 55px;
+    text-align: center;
+    color: rgb(216, 70, 70);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.resumo {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.resumo-curiosidades {
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    width: 70%;
+}
+
+.curiosidades-quadros {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+
+
+.quadro1 {
+    display: flex;
+    background-color: #E94141;
+    width: 300px;
+    height: 350px;
+}
+
+.quadro2 {
+    display: flex;
+    background-color: #000000;
+    width: 300px;
+    height: 350px;
+}
+
+.quadro3 {
+    display: flex;
+    background-color: #E94141;
+    width: 300px;
+    height: 350px;
+}
+
+.texto-quadro {
+    margin-top: 7px;
+    margin-left: 7px;
+    color: #ffff;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 22px;
+    padding: 15px;
+}
+@media screen and (max-width: 1470px) {
+
+  .texto-quadro{
+    font-size: 25px;
+  }
+  }
+  @media screen and (max-width: 1400px) {
+
+    .texto-quadro{
+      font-size: 22px;
+    }
+    .rodape{
+         display: flex;
+         flex-wrap: wrap;
+         height: auto;
+         
+    }
+    }
+    @media screen and (max-width: 1270px) {
+
+        .texto-quadro{
+          font-size: 21px;
+        }
+        .rodape{
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            
+       }
+        }
+@media screen and (max-width: 1150px) {
+  
+    .titulo-icon,
+    .titulo-icon-curiosidades {
+        font-size: 12px;
+    }
+    .texto-quadro{
+        font-size: 19px;
+      }
+    .quadro1{
+        /* height: auto;
+        width: auto; */
+
+    }
+    .quadro2{
+        /* height: auto;
+        width: auto; */
+        
+    }
+    .quadro3{
+        /* height: auto;
+        width: auto; */
+        
+    }
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+       
+   }
+  }
+  
+  @media screen and (max-width: 850px) {
+  
+    .titulo-icon img,
+    .titulo-icon-curiosidades img {
+        display: none;
+    }
+    .texto-quadro{
+        font-size: 20px;
+      }
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        flex-direction: column;
+   }
+  
+   
+  }
+  
+  @media screen and (max-width: 550px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        flex-direction: column;
+   }
+    
+  }
